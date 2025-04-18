@@ -1,0 +1,11 @@
+# Ejecutables
+ .exe
+ .out
+
+# Archivos temporales
+ .o
+ .obj
+ .log
+
+# VSCode configs
+ .vscode/
