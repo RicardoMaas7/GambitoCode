@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "tablero.h"
 
+
 int main() {
     // Declarar el tablero
     char tablero[FILAS][COLUMNAS];
