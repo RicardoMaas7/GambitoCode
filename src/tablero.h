@@ -1,8 +1,8 @@
 #ifndef TABLERO_H
 #define TABLERO_H
 
-#include "tablero.c"
-// Definiciones para el tablero
+#define FILAS 10
+#define COLUMNAS 10
 
 // Inicializa el tablero con las posiciones iniciales
 void inicializar_tablero(char tablero[FILAS][COLUMNAS]);
@@ -15,4 +15,4 @@ void limpiar_tablero(char tablero[FILAS][COLUMNAS]);
 void colocar_pieza(char tablero[FILAS][COLUMNAS], int fila, int columna, char pieza);
 char obtener_pieza(char tablero[FILAS][COLUMNAS], int fila, int columna);
 
-#endif // TABLERO_H
+#endif
