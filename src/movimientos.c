@@ -15,7 +15,7 @@ Posicion convertir_notacion(char *notacion) {
         // Valores por defecto en caso de error
         pos.fila = -1;
         pos.columna = -1;
-        printf("DEBUG: Notación inválida: %s\n", notacion);
+        printf("DEBUG: Notacion invalida: %s\n", notacion);
         return pos;
     }
     
@@ -25,7 +25,7 @@ Posicion convertir_notacion(char *notacion) {
     // La fila es el segundo carácter (1-8 -> 8-1)
     pos.fila = '9' - notacion[1];
     
-    printf("DEBUG: Notación: %s -> Fila: %d, Columna: %d\n", notacion, pos.fila, pos.columna);
+    printf("DEBUG: Notacion: %s -> Fila: %d, Columna: %d\n", notacion, pos.fila, pos.columna);
     
     return pos;
 }
@@ -36,7 +36,7 @@ int es_movimiento_valido(char tablero[10][10], Movimiento mov) {
     
     // Verificar que la posición de origen tenga una pieza
     if (es_casilla_vacia(pieza)) {
-        printf("DEBUG: No hay pieza en la posición de origen [%d,%d]\n", 
+        printf("DEBUG: No hay pieza en la posicion de origen [%d,%d]\n", 
                mov.origen.fila, mov.origen.columna);
         return 0;
     }
@@ -44,7 +44,7 @@ int es_movimiento_valido(char tablero[10][10], Movimiento mov) {
     // Verificar que la posición de destino no tenga una pieza del mismo color
     char pieza_destino = tablero[mov.destino.fila][mov.destino.columna];
     if (!es_casilla_vacia(pieza_destino) && son_del_mismo_color(pieza, pieza_destino)) {
-        printf("DEBUG: Hay una pieza del mismo color en la posición de destino\n");
+        printf("DEBUG: Hay una pieza del mismo color en la posicion de destino\n");
         return 0;
     }
     
@@ -73,8 +73,8 @@ int es_movimiento_valido(char tablero[10][10], Movimiento mov) {
             resultado = 0;
     }
     
-    printf("DEBUG: Validación de movimiento para pieza '%c': %s\n", 
-           pieza, resultado ? "VÁLIDO" : "INVÁLIDO");
+    printf("DEBUG: Validacion de movimiento para pieza '%c': %s\n", 
+           pieza, resultado ? "VALIDO" : "INVALIDO");
     return resultado;
 }
 

@@ -23,7 +23,7 @@ int procesar_turno(EstadoJuego *juego, char *entrada) {
     
     
     if (sscanf(entrada, "%s %s", origen_str, destino_str) != 2) {
-        printf("Formato inválido. Use: 'e2 e4'\n");
+        printf("Formato invalido. Use: 'e2 e4'\n");
         return 0;
     }
     
@@ -45,7 +45,7 @@ int procesar_turno(EstadoJuego *juego, char *entrada) {
     
     
     if (!es_movimiento_valido(juego->tablero, mov)) {
-        printf("Movimiento inválido.\n");
+        printf("Movimiento invalido.\n");
         return 0;
     }
     
