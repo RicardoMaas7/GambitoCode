@@ -34,8 +34,8 @@ void inicializar_tablero(char tablero[FILAS][COLUMNAS]) {
 
     // Colocamos peones blancos y negros (CORREGIDO)
     for (int j = 1; j < COLUMNAS-1; j++) {
-        tablero[2][j] = 'p'; // Peones negros (fila 7)
-        tablero[7][j] = 'P'; // Peones blancos (fila 2)
+        tablero[2][j] = 'p'; // Peones negros (fila 7) p minuscula
+        tablero[7][j] = 'P'; // Peones blancos (fila 2) P mayuscula
     }
 
     // Colocamos las piezas negras (fila 8) - CORREGIDO

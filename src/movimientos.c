@@ -4,7 +4,7 @@
 #include "movimientos.h"
 #include "tablero.h"
 
-// Función para convertir notación algebraica a posición (ej: "e4" -> fila, columna)
+// Función para convertir notación algebraica a posición (ej: "e2" -> fila, columna)
 Posicion convertir_notacion(char *notacion) {
     Posicion pos;
     
